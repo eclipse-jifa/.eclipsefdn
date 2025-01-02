@@ -2,13 +2,10 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('technology.jifa', 'eclipse-jifa') {
   settings+: {
-
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
     },
   },
-  teams+: [
-  ],
   _repositories+:: [
     orgs.newRepo('jifa') {
       allow_merge_commit: true,
