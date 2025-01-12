@@ -59,7 +59,7 @@ orgs.newOrg('technology.jifa', 'eclipse-jifa') {
         orgs.newBranchProtectionRule('main') {
           dismisses_stale_reviews: true,
           is_admin_enforced: true,
-          required_approving_review_count: 1,
+          required_approving_review_count: 0,
         },
       ],
       environments: [
