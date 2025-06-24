@@ -11,6 +11,7 @@ orgs.newOrg('technology.jifa', 'eclipse-jifa') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "javascript-typescript",
       ],
       code_scanning_default_setup_enabled: true,
@@ -18,6 +19,7 @@ orgs.newOrg('technology.jifa', 'eclipse-jifa') {
       dependabot_security_updates_enabled: true,
       description: "🔬 Online Heap Dump, GC Log, Thread Dump & JFR File Analyzer.",
       gh_pages_build_type: "workflow",
+      has_discussions: true,
       homepage: "https://eclipse-jifa.github.io/jifa",
       topics+: [
         "gc-log",
